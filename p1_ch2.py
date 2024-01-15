@@ -77,4 +77,4 @@ print(model.state_dict()) # remember, model == sbs.model
 print(sbs.total_epochs)
 
 sbs.plot_losses()
-#plt.show()
+plt.show()
