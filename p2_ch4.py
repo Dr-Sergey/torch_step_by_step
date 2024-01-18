@@ -188,8 +188,6 @@ print("Number model parameters: ", sbs_relu.count_parameters())
 
 fig = sbs_relu.plot_losses()
 
-# Get mouse coordinates
-
 plt.show()
 
 
