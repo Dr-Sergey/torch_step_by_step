@@ -215,6 +215,9 @@ class StepByStep(object):
         plt.legend()
         plt.tight_layout()
         return fig
+    
+    def count_parameters(self):
+        return sum(p.numel() for p in self.model.parameters() if p.requires_grad)
 
     def add_graph(self):
         # Fetches a single mini-batch so we can use add_graph
